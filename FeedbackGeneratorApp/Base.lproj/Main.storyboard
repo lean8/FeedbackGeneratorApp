@@ -1,24 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9DP-tj-4bE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--點選按鈕測試-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FeedbackGeneratorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpA-9p-BMp">
+                                <rect key="frame" x="30" y="167" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Heavy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapHeavyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRm-pw-cip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88O-eL-SxR">
+                                <rect key="frame" x="30" y="240" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapMediumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mya-ch-dAL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCH-19-tMr">
+                                <rect key="frame" x="30" y="313" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Light">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2u6-rm-KIJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jh-eh-zfz">
+                                <rect key="frame" x="30" y="538" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="組合(H+L)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BwW-0w-YDJ"/>
+                                    <action selector="TapMediumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXJ-lb-ubh"/>
+                                    <action selector="TapMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlS-Oa-sFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkw-QH-kdR">
+                                <rect key="frame" x="30" y="621" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="組合x10">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FE4-j8-6zf"/>
+                                    <action selector="TapMediumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xik-mx-EBm"/>
+                                    <action selector="TapMix2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWO-nx-7Dr"/>
+                                    <action selector="TapMix3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Od1-h6-eoF"/>
+                                    <action selector="TapMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x52-eQ-CRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqx-Ad-3dX">
+                                <rect key="frame" x="30" y="694" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="組合x20">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1l-Jg-vs9"/>
+                                    <action selector="TapMediumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wD-Wk-V5E"/>
+                                    <action selector="TapMix2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lly-KY-cPI"/>
+                                    <action selector="TapMix3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nBM-Ve-XTq"/>
+                                    <action selector="TapMix4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdk-H9-dF8"/>
+                                    <action selector="TapMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZN-6z-tNc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基本震動：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ5-UW-3h3">
+                                <rect key="frame" x="30" y="108" width="354" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="組合震動：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tu-t0-YnT">
+                                <rect key="frame" x="30" y="479" width="354" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuC-Qn-lHX">
+                                <rect key="frame" x="30" y="396" width="354" height="53"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="震動sound">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHh-nx-iGa"/>
+                                    <action selector="TapSoundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGe-uD-JAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sqx-Ad-3dX" secondAttribute="trailing" constant="30" id="0Jn-Ps-mKD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vkw-QH-kdR" secondAttribute="trailing" constant="30" id="1KU-2t-Ntk"/>
+                            <constraint firstItem="EuC-Qn-lHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4TI-Rr-VG8"/>
+                            <constraint firstItem="sqx-Ad-3dX" firstAttribute="top" secondItem="Vkw-QH-kdR" secondAttribute="bottom" constant="20" id="5DQ-w1-8tx"/>
+                            <constraint firstItem="uCH-19-tMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6D5-cy-5X4"/>
+                            <constraint firstItem="sqx-Ad-3dX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7zJ-8s-6yh"/>
+                            <constraint firstItem="sqx-Ad-3dX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BKL-4T-FsK"/>
+                            <constraint firstItem="uCH-19-tMr" firstAttribute="top" secondItem="88O-eL-SxR" secondAttribute="bottom" constant="20" id="C6j-3U-1Tz"/>
+                            <constraint firstItem="ZpA-9p-BMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dwr-hN-BoF"/>
+                            <constraint firstItem="uCH-19-tMr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNk-hK-IKY"/>
+                            <constraint firstItem="tZ5-UW-3h3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HbJ-04-CNJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuC-Qn-lHX" secondAttribute="trailing" constant="30" id="KDo-3T-ywE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4tu-t0-YnT" secondAttribute="trailing" constant="30" id="S7E-4W-8Th"/>
+                            <constraint firstItem="ZpA-9p-BMp" firstAttribute="top" secondItem="tZ5-UW-3h3" secondAttribute="bottom" constant="30" id="SI7-ax-wca"/>
+                            <constraint firstItem="tZ5-UW-3h3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WOs-QH-5Vu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uCH-19-tMr" secondAttribute="trailing" constant="30" id="Xk7-Hf-kYm"/>
+                            <constraint firstItem="Vkw-QH-kdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aBM-cR-uig"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="88O-eL-SxR" secondAttribute="trailing" constant="30" id="agQ-MC-Cjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9jh-eh-zfz" secondAttribute="trailing" constant="30" id="b75-XU-U0l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZpA-9p-BMp" secondAttribute="trailing" constant="30" id="cLq-XH-7X7"/>
+                            <constraint firstItem="4tu-t0-YnT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fNS-Tf-Ht0"/>
+                            <constraint firstItem="4tu-t0-YnT" firstAttribute="top" secondItem="EuC-Qn-lHX" secondAttribute="bottom" constant="30" id="fdZ-G9-FVI"/>
+                            <constraint firstItem="4tu-t0-YnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gmy-oN-3jf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZ5-UW-3h3" secondAttribute="trailing" constant="30" id="gnZ-8l-rEO"/>
+                            <constraint firstItem="tZ5-UW-3h3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gwt-u2-DDW"/>
+                            <constraint firstItem="ZpA-9p-BMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jWi-nh-wdI"/>
+                            <constraint firstItem="88O-eL-SxR" firstAttribute="top" secondItem="ZpA-9p-BMp" secondAttribute="bottom" constant="20" id="lpq-Lo-QMs"/>
+                            <constraint firstItem="Vkw-QH-kdR" firstAttribute="top" secondItem="9jh-eh-zfz" secondAttribute="bottom" constant="30" id="nOE-w2-qAe"/>
+                            <constraint firstItem="9jh-eh-zfz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nic-V7-Fih"/>
+                            <constraint firstItem="EuC-Qn-lHX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tXw-h6-Dss"/>
+                            <constraint firstItem="88O-eL-SxR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="umu-ic-orG"/>
+                            <constraint firstItem="EuC-Qn-lHX" firstAttribute="top" secondItem="uCH-19-tMr" secondAttribute="bottom" constant="30" id="w7a-se-qJZ"/>
+                            <constraint firstItem="Vkw-QH-kdR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="x0c-SC-15u"/>
+                            <constraint firstItem="88O-eL-SxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrw-Nh-5UE"/>
+                            <constraint firstItem="9jh-eh-zfz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xuY-Ov-c49"/>
+                            <constraint firstItem="9jh-eh-zfz" firstAttribute="top" secondItem="4tu-t0-YnT" secondAttribute="bottom" constant="30" id="zIJ-KT-HWM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="點選按鈕測試" id="7xm-4U-iIF"/>
+                    <connections>
+                        <outlet property="HeavyButton" destination="ZpA-9p-BMp" id="oqk-bf-ySC"/>
+                        <outlet property="LightButton" destination="uCH-19-tMr" id="oZy-US-F5Z"/>
+                        <outlet property="MediumButton" destination="88O-eL-SxR" id="gIJ-Xh-uWa"/>
+                        <outlet property="SoundButton" destination="EuC-Qn-lHX" id="1vW-Dn-tPe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yYw-Kk-vXv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9DP-tj-4bE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gbe-sG-Yyf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o1l-1n-pbC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99G-d7-ixc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
